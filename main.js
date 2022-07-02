@@ -64,7 +64,7 @@ equal.addEventListener('click', () => {
     } else if (result.innerText.includes('π')) {
       total.innerText = eval(result.innerText.replace('π', Math.PI))
     } else {
-      total.innerText = eval(result.innerText)
+      total.innerText = parseFloat(eval(result.innerText).toFixed(10))
     }
     result.innerText == total.innerText
   }
